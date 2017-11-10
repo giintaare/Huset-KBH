@@ -5,20 +5,155 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huset app</title>
-    <link rel="stylesheet" href=""> </head>
+    <link rel="stylesheet" href="">
+    <style>
+        h1 {
+            text-align: center;
+            font: 25px "Lato", sans-serif;
+        }
+
+        .excerpt {
+            font: 15px "Lato", sans-serif;
+        }
+
+        body {
+            background-image: url(Artboard%203-100.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #title {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 30px "Lato", sans-serif;
+            color: #111;
+            text-align: center;
+            flex: auto;
+            margin-top: -6px;
+        }
+
+        .event {
+            border: 1px solid;
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: rgba(255, 250, 250, .6);
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        h2 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 25px "Lato", sans-serif;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        #burgerimg {
+            height: 40px;
+        }
+
+        #home {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: black;
+            text-decoration: none;
+        }
+
+        h1 {
+            font: 20px "Lato", sans-serif;
+        }
+
+        .read-more {
+            text-transform: uppercase;
+            font: 15px "Lato", sans-serif;
+            color: dimgray;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            color: beige;
+        }
+
+        #huset {
+            height: 60px;
+        }
+
+        #burger {
+            flex: auto;
+            float: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
 
 <body>
+    <header>
+        <a id="home" href="front-page.html"><img id="huset" src="default-image.png"></a>
+        <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Categories</h2>
+            <ul id="tagMenu">
+                <template id="linkTemplate">
+                    <li><a href="#">Item1</a></li>
+                </template>
+            </ul>
+        </div> <span id="burger" onclick="openNav()"><img id="burgerimg" src="burger.png"></span>
+        <h1 id="title">events</h1> </header>
     <section id="list"></section>
     <template id="eventTemplate">
         <article class="event">
             <h1></h1>
-            <div class="excerpt"></div>
-            <img src="" alt="">
-            <p class="price">$<span></span></p>
+            <p class="price">Price: Dkk <span></span></p>
+            <p class="place">Place: <span></span></p>
+            <p class="time">Time:<span></span></p>
+            <div class="excerpt"></div> <img src="" alt="">
+            <p><a class="read-more" href="event.html">Read more</a></p>
         </article>
     </template>
-
-
     <script src="main.js"></script>
 </body>
 
