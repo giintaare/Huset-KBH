@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        .hide{
+            display: none;
+        }
+        #btnText:hover {
+            color: whitesmoke;
+        }
+
+        #bcg {
+            width: 100%;
+            position: absolute;
+        }
+
+        #btn {
+            width: 60%;
+            position: relative;
+            margin-top: 110%;
+        }
+
+        #btnText {
+            position: relative;
+            margin-top: -10px;
+            text-decoration: none;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 14px "Lato", sans-serif;
+            color: #111;
+        }
+
+        #text {
+            margin-top: -32px;
+        }
+
+        #ctg {
+            position: relative;
+            width: 40%;
+            margin-top: 100px;
+            margin-left: 40px;
+        }
+
+        #choose {
+            columns: 3;
+        }
+
+        #choose a:hover {
+            color: whitesmoke;
+
+        }
+
+        h3 {
+            position: relative;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font: 10px "Lato", sans-serif;
+            color: #111;
+            text-decoration: none;
+            margin-left: 28px;
+        }
+
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: rgba(255,250,250, .9);
+
+            margin: 15% auto;
+
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #myBtn {
+            position: relative;
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 10px "Lato", sans-serif;
+            color: #111;
+            cursor: pointer;
+
+        }
+
+        h3 {
+            cursor: pointer;
+        }
+        h2{
+            font-size: 30px;
+        }
+        li{
+            font-size: 20px;
+            text-align: left;
+            padding-bottom: 3px;
+        }
+        .icon:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background"><img id="bcg" src="Artboard%202-100.jpg">
+        <center><img id="btn" src="btn.png"></center>
+        <div id="text">
+            <center><a id="btnText" href="index.html">Let's explore</a></center>
+        </div>
+
+
+
+        <div id="choose">
+        <div id="myBtn1" class="Btn"> <img id="ctg" class="icon" src="ctg.png">
+            <h3>About us</h3>
+            </div>
+            <div id="myBtn2" class="Btn"> <img id="ctg" class="icon" src="dt.png">
+            <h3>Volunteering</h3>
+            </div>
+                <div id="myBtn3" class="Btn">
+             <img id="ctg" class="icon" src="plc.png">
+            <h3>Contact us</h3> </div>
+        <div id="myModal1" class="modal hide">
+            <div class="modal-content"> <span class="close">&times;</span>
+                <h2>About us</h2>
+                <p class="info">Huset-KBH (or simply ‘Huset’) is Denmark’s first and largest culture house founded in 1970! Today Huset hosts approximately 1,500 annual events, distributed across 5 diverse stages, a cinema, and a board game café. Everything from live music, theatre performances, alternative cinematic films, to spoken word and stand-up comedy can be experienced here, at Huset.
+
+Inside Huset, you can find a board game cafe, a small ‘kitsch’ event cinema, as well as an interesting concert venue for both upcoming and established artists. This venue contains unique experiences for everyone regardless if you speak Danish or English! Huset offers financially friendly prices, even for tightest wallets, and often holds many free events.
+
+This unique culture house has a remarkable legacy spanning over four decades and is very important to many Copenhageners. Residents know it for its colorful history, cultural diversity and musical programs. The experiences shared at Huset continue to invite guests to come back for more!</p>
+            </div>
+            </div>
+
+            <div id="myModal2" class="modal hide">
+            <div class="modal-content"> <span class="close">&times;</span>
+                <h2>DO YOU WANT TO VOLUNTEER AT HUSET-KBH?</h2>
+                <p class="info">As a volunteer in Huset you can:
+                    <ul>
+
+
+<li>Make new friends and a big network.</li>
+<li>A unique and diverse workplace</li>
+<li>Have drink tickets for every shift and advantageous prices whenever you’re visiting Huset</li>
+<li>Have a Huset membership card which allows you to get discount on several cafés and restaurant in the area surrounding Huset-KBH</li>
+<li>Have the possibility to attend events that are not sold out for free in Musikcaféen, STAGE in Huset and at our neighbors:</li> <li>Spillestedet Stengade, RUST, Beta and Loppen</li>
+<li>Be invited to Huset’s annual summer party, Christmas party and a bunch of other Huset
+related events</li>
+<li>Have the possibility to engage in other voluntary projects in Huset fx. booking concerts, planning festivals, and possible co-creative ideas.</li>
+                        </ul>
+                        To find out more click <a href="https://huset-kbh.dk/volunteering/side-volunteering-projects/?lang=en">here</a>
+
+            </div>
+        </div>
+
+            <div id="myModal3" class="modal hide">
+            <div class="modal-content"> <span class="close">&times;</span>
+                <h2>Contact us</h2>
+                <p class="info">HUSET-KBH<br>
+Rådhusstræde 13<br>
+1466 Copenhagen K<br>
+Tlf: +45 21 51 21 51<br>
+
+info@huset-kbh.dk<br>
+
+Office opening hours: Weekdays 11.00-15.00 P.M
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+       let modal1 = document.getElementById('myModal1');
+        let modal2 = document.getElementById('myModal2');
+        let modal3 = document.getElementById('myModal3');
+
+        let btns = document.querySelectorAll(".Btn");
+        let modals = document.querySelectorAll(".modal");
+
+        btns.forEach(function(btn){
+            btn.addEventListener("click", toggleModal);
+        })
+
+        modals.forEach(function(modal){
+            modal.addEventListener("click", toggleModal);
+        })
+
+        function toggleModal(){
+            console.log(this.id);
+            if(this.id=="myBtn1"){
+                modal1.classList.remove("hide")
+            }else if(this.id=="myBtn2"){
+                modal2.classList.remove("hide")
+            }else if(this.id=="myBtn3"){
+                modal3.classList.remove("hide")
+            }else{
+                modal1.classList.add("hide");
+                modal2.classList.add("hide");
+                modal3.classList.add("hide");
+            }
+        }
+/*
+       let modal1 = document.getElementById('myModal1');
+        let modal2 = document.getElementById('myModal2');
+        let modal3 = document.getElementById('myModal3');
+
+        let btn1 = document.getElementById("myBtn1");
+        let btn2 = document.getElementById("myBtn2");
+        let btn3 = document.getElementById("myBtn3");*/
+
+        let span = document.getElementsByClassName("close")[0];
+
+     /*   btn1.onclick = function () {
+                modal1.style.display = "block";
+            }
+        btn2.onclick = function () {
+                modal2.style.display = "block";
+            }
+        btn3.onclick = function () {
+                modal3.style.display = "block";
+        }
+
+
+
+
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal.style.display = "none";
+            }
+
+        }
+
+*/
+
+
+    </script>
+
+</body>
+</html>
