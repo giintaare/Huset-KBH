@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huset app</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-image: url(Artboard%203-100.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .event {
+            border: 1px solid;
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: rgba(255, 250, 250, .6);
+        }
+
+        #huset {
+            height: 60px;
+        }
+        #title{
+
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 30px "Lato", sans-serif;
+            color: #111;
+            text-align: center;
+            flex: auto;
+            margin-top: -6px;
+        }
+        #bck{
+            width: 30px;
+            flex: auto;
+            float: right;
+            margin-top: 7px;
+            opacity: 0.7;
+        }
+        #sng{
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <a id="home" href="front-page.html"><img id="huset" src="default-image.png"></a>
+    <a id="back" href="index.html"><img id="bck" src="back.png"></a>
+
+    <h1 id="title">events</h1>
+
+    <section id="single">
+        <article class="event">
+            <h1></h1>
+            <p class="price">$<span></span></p>
+            <p class="place">Place: <span></span></p>
+            <p class="time">Time: <span></span></p><img id="sng" src="" alt="">
+            <div class="content"></div>
+        </article>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
